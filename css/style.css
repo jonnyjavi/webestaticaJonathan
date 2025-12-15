@@ -7,6 +7,9 @@ html, body {
   overflow: hidden;
   font-family: Orbitron, Arial, sans-serif;
 }
+
+/* Super Cambio */
+
 #saludo {
   position: absolute;
   top: 50%;

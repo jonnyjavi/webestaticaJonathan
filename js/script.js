@@ -13,7 +13,7 @@ let input = document.getElementById("user");
 
     // Cambia el mensaje y los estilos:
     if (mensaje.textContent === "Bienvenido a mi página web") {
-      mensaje.textContent = "No deberías haber accedido aquí." + usuario;
+      mensaje.textContent = "No deberías haber accedido aquí " + usuario;
       input.remove();
       mensaje.classList.add("mensaje-rojo"); // Aplica el gradiente rojo a las letras
     } else {

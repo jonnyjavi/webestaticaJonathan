@@ -107,6 +107,15 @@ html, body {
   white-space: nowrap;
   animation: fall linear infinite;
 }
+#userName {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #0ff;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  outline: none;
+  font-family: Orbitron, Arial, sans-serif;
+}
 .matrix-column.red::before {
   background: linear-gradient(to bottom, #ff0000 0%, #ff0000 100%);
   -webkit-background-clip: text;

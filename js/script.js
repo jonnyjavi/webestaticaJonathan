@@ -1,9 +1,10 @@
 const boton = document.getElementById("botonCambiar");
 const mensaje = document.getElementById("mensaje");
+const input = document.getElementById("userName");
 
 boton.addEventListener("click", () => {
-let usuario = document.getElementById("user").value.trim();
-let input = document.getElementById("user");
+const usuario = input.value.trim();
+
   // Mostrar imagen de transición
   transicionImg.style.display = "block";
 
@@ -12,13 +13,14 @@ let input = document.getElementById("user");
     transicionImg.style.display = "none";
 
     // Cambia el mensaje y los estilos:
-    if (mensaje.textContent === "Bienvenido a mi página web") {
-      mensaje.textContent = "No deberías haber accedido aquí " + usuario;
-      input.remove();
+    if (usuario && !mensaje.classList.contains("mensaje-rojo")) {
+      mensaje.textContent = "Hola " + usuario + ", no deberías haber accedido aquí";
       mensaje.classList.add("mensaje-rojo"); // Aplica el gradiente rojo a las letras
+      input.style.display = "none";
     } else {
       mensaje.textContent = "Bienvenido a mi página web";
       mensaje.classList.remove("mensaje-rojo"); // Vuelve al color original
+      input.style.display = "inline-block";
     }
     // Alterna la clase 'red' en todas las columnas Matrix
     document.querySelectorAll(".matrix-column").forEach((col) => {

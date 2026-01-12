@@ -12,7 +12,7 @@ boton.addEventListener("click", () => {
 
     // Cambia el mensaje y los estilos:
     if (mensaje.textContent === "Bienvenido a mi página web") {
-      mensaje.textContent = "No deberías haber accedido aquí." + usuario;
+      mensaje.textContent = "No deberías haber accedido aquí.";
       mensaje.classList.add("mensaje-rojo"); // Aplica el gradiente rojo a las letras
     } else {
       mensaje.textContent = "Bienvenido a mi página web";

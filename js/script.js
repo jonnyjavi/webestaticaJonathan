@@ -2,6 +2,7 @@ const boton = document.getElementById("botonCambiar");
 const mensaje = document.getElementById("mensaje");
 
 boton.addEventListener("click", () => {
+  let usuario = document.getElementById("user").trimp;
   // Mostrar imagen de transición
   transicionImg.style.display = "block";
 
@@ -11,7 +12,7 @@ boton.addEventListener("click", () => {
 
     // Cambia el mensaje y los estilos:
     if (mensaje.textContent === "Bienvenido a mi página web") {
-      mensaje.textContent = "No deberías haber accedido aquí.";
+      mensaje.textContent = "No deberías haber accedido aquí." + usuario;
       mensaje.classList.add("mensaje-rojo"); // Aplica el gradiente rojo a las letras
     } else {
       mensaje.textContent = "Bienvenido a mi página web";

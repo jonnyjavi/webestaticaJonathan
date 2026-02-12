@@ -15,7 +15,7 @@ const usuario = input.value.trim();
     // Cambia el mensaje y los estilos:
     if (usuario && !mensaje.classList.contains("mensaje-rojo")) {
       try {
-        const response = await fetch(`http://localhost:8080/api/advertencias?nombre=${encodeURIComponent(usuario)}`);
+        const response = await fetch(`http://jonnyjaviAPI.us-east-1.elasticbeanstalk.com/api/advertencias?nombre=${encodeURIComponent(usuario)}`);
         const data = await response.json();
         
         if (data.estado === "denied") {
